@@ -1,0 +1,9 @@
+- job:
+    name: Build Job
+    project-type: pipeline
+    sandbox: true
+    pipeline-scm:
+      scm:
+        - git:
+            url: https://github.com/kassybas/jenkins-trial.git
+      script-path: Jenkinsfile
