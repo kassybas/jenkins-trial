@@ -4,10 +4,13 @@ node{
 	checkout scm
 
     env.app_name = 'TestApp1'
-    env.container_name = 'MyContainer'
+    env.image_name = 'my-image'
 
     stage 'Create DockerBuild container'
-    sh script: 'docker build --force-rm -t ${build_container_name} -f {{.jenkins.pipeline.build.pathToBuildDockerfile}} .'
+    sh script: '''
+    docker build --force-rm -t ${image_name}  .
+	docker images
+	'''
 
 //  stage 'Run Build'
 //  sh returnStdout: true, script: '''
