@@ -8,7 +8,7 @@ node{
 
     stage 'Create DockerBuild container'
     sh script: '''
-    docker build --force-rm -t ${image_name}  .
+    docker build -t ${image_name}  .
 	docker images
 	'''
 
