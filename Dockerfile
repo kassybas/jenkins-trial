@@ -1,9 +1,6 @@
 FROM php
 
-MAINTAINER MrBrown <mrb@freemail.hu>
-LABEL maintainers="MrBrown <mrb@freemail.hu>"
+MAINTAINER MrHund<mrh@freemail.hu>
+LABEL maintainers="Mrund<mrh@freemail.hu>"
 
-RUN apt-get update && apt-get install -y git zip
-
-RUN curl -k https://getcomposer.org/composer.phar > /usr/bin/composer && \
-    chmod +x /usr/bin/composer
+RUN echo 'I am built'
