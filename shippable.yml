@@ -1,0 +1,6 @@
+language: php
+php:
+  - "7.0"
+build:
+  ci:
+    - docker build testme .
