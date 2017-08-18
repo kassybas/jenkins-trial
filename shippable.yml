@@ -3,4 +3,4 @@ php:
   - "7.0"
 build:
   ci:
-    - docker build testme .
+    - docker build --force-rm -t myimage .
