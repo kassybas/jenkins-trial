@@ -2,5 +2,7 @@ language: php
 php:
   - "7.0"
 build:
+  myown:
+    - echo "this runs now"
   ci:
     - docker build --force-rm -t myimage .
