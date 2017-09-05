@@ -1,5 +1,5 @@
 build_docker: main
-	docker build --force-rm -t testme  .
+	docker build --force-rm -t trivago/trash:gotest  .
 	docker images
 
 main:
