@@ -1,5 +1,8 @@
-build:
+build_docker: main
 	docker build --force-rm -t testme  .
 	docker images
 
-.pyhony: build
+main:
+	go build main.go
+
+.pyhony: build_docker
